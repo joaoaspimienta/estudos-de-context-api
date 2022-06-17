@@ -2,13 +2,13 @@ import { useState } from "react";
 import Alunos from "./components/Alunos";
 
 function App() {
-  const [nomeAluno, setNomeAluno] = useState("Justin");
+  const [aluno, setAluno] = useState("Justin");
 
   return (
     <div>
       <h1>ESCOLA</h1>
       <hr />
-      <Alunos nome={nomeAluno} mudaNome={setNomeAluno} />
+      <Alunos aluno={aluno} />
     </div>
   );
 }

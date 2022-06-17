@@ -8,7 +8,7 @@ function App() {
     <div>
       <h1>ESCOLA</h1>
       <hr />
-      <Alunos nome={nomeAluno} mudaNome={setNomeAluno} />
+      <Alunos aluno={nomeAluno} mudaNome={setNomeAluno} />
     </div>
   );
 }
