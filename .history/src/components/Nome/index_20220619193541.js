@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { UserContext } from "../../contexts/user";
 
 function Nome() {
-  const { alunos, setAlunos, qtdArtefatos } = useContext(UserContext);
+  const { alunos, setAlunos } = useContext(UserContext);
 
   return (
     <div>

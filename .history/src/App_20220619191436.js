@@ -1,7 +1,10 @@
+import { useState } from "react";
 import Alunos from "./components/Alunos";
 import UserProvider from "./contexts/user";
 
 function App() {
+  const [nomeAluno, setNomeAluno] = useState("Justin");
+
   return (
     <UserProvider>
       <div>

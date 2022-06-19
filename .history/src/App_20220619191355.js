@@ -1,13 +1,16 @@
+import { useState } from "react";
 import Alunos from "./components/Alunos";
 import UserProvider from "./contexts/user";
 
 function App() {
+  const [nomeAluno, setNomeAluno] = useState("Justin");
+
   return (
     <UserProvider>
       <div>
         <h1>ESCOLA</h1>
         <hr />
-        <Alunos />
+        <Alunos nome={nomeAluno} mudaNome={setNomeAluno} />
       </div>
     </UserProvider>
   );
